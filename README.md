@@ -3,7 +3,7 @@
 API REST para gerenciar atividades de casa e deixar a vida da mulher empreendedora mais ágil.
 
 #### Requerimentos
-Você deve ter python 3.6 (ou superior), pip, mysql.
+Você deve ter python 3.6 (ou superior), pip.
 
 #### Recomenda-se o uso de um ambiente virtual:
 ```sh
