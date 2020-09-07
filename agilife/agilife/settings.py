@@ -14,7 +14,8 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth'
+    'rest_auth',
+    'corsheaders'
 ]
 
 REST_FRAMEWORK = {
@@ -34,6 +35,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 TEMPLATES = [
@@ -97,3 +99,4 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'api.User'
 
+CORS_ORIGIN_ALLOW_ALL = True
